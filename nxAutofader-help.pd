@@ -1,0 +1,16 @@
+#N canvas 778 331 404 301 10;
+#X floatatom 41 184 5 0 0 0 - - -;
+#X floatatom 83 92 5 0 0 1 Min_rand_(millis) - -;
+#X floatatom 104 119 5 0 0 1 Max_rand_(millis) - -;
+#X obj 41 149 nxAutofader;
+#X text 275 259 Miquel Parera.;
+#X text 275 273 December \, 2013;
+#X text 164 19 nxAutofader.;
+#X text 163 39 Random automatic fader.;
+#X msg 41 24 bang;
+#X msg 62 54 stop;
+#X connect 1 0 3 2;
+#X connect 2 0 3 3;
+#X connect 3 0 0 0;
+#X connect 8 0 3 0;
+#X connect 9 0 3 1;

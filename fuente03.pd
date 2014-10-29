@@ -1,0 +1,34 @@
+#N canvas 7 538 514 319 10;
+#X obj -14 -24 cnv 15 500 30 empty empty Fuente_Caótica_03_-_Brown_Melody
+20 12 0 20 -258113 -66577 0;
+#X obj -14 7 cnv 15 500 250 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 33 23 ON / OFF;
+#X obj -14 258 cnv 15 500 25 empty empty Origen: 20 12 0 12 -4032 -66577
+0;
+#X obj 10 153 brown-melody 24 108 0.1;
+#X floatatom 162 106 4 0 0 2 highest_note - -;
+#X floatatom 87 105 4 0 0 2 lowest_note - -;
+#X floatatom 241 106 4 0 0 2 brown_factor - -;
+#X obj 10 85 metro 200;
+#X obj 10 25 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X floatatom 10 185 4 0 0 1 note - -;
+#X floatatom 145 186 4 0 0 1 interval - -;
+#X obj 10 118 bng 15 250 50 0 empty empty rhythm_bangs 0 -6 0 8 -262144
+-1 -1;
+#X floatatom 61 61 5 50 2000 2 speed - -;
+#X obj 10 214 send fuente03X;
+#X obj 145 214 send fuente03Y;
+#X text 60 261 RTC Lib - 1993 by Karlheinz Essl;
+#X connect 4 0 10 0;
+#X connect 4 1 11 0;
+#X connect 5 0 4 2;
+#X connect 6 0 4 1;
+#X connect 7 0 4 3;
+#X connect 8 0 12 0;
+#X connect 9 0 8 0;
+#X connect 10 0 14 0;
+#X connect 11 0 15 0;
+#X connect 12 0 4 0;
+#X connect 13 0 8 1;

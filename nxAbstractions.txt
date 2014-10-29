@@ -1,0 +1,27 @@
+
+nxAbstractions for PureData.
+Miquel Parera.
+GPL License.
+
+CONTROL--------------------------------------------------------------
+
+nxEqSelector | Eq ON / OFF Selector.
+nxSequencerX4 | Semideterministic Sequencer (4 Steps)
+nxRandom | Generates a pseudo-random number between min and max.
+
+AUDIO----------------------------------------------------------------
+
+nx501~ | Semideterministic Drone Generator.
+
+Dependencies---------------------------------------------------------
+
+equal_power_pan~ / pan_core~ (Abstraction - pan Lib)
+peakenv~ (Binary - iemlib Lib)
+pow~ (Binary - cyclone Lib) 
+qompander~ (Abstraction - Katja Vetter Web)
+triang (Binary - ? Lib)
+
+
+Recommended Utilities------------------------------------------------
+
+freeverb~ (Binary - freeverb lib)

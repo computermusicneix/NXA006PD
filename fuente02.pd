@@ -1,0 +1,35 @@
+#N canvas 411 82 510 394 10;
+#X obj -22 -29 cnv 15 500 30 empty empty Fuente_Caótica_02_-_Rossler's_Attractor
+20 12 0 20 -258113 -66577 0;
+#X obj -22 2 cnv 15 500 300 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 34 27 ON / OFF;
+#X obj -22 303 cnv 15 500 50 empty empty Origen: 20 12 0 12 -4032 -66577
+0;
+#X text 4 330 Chaos PD Externals - Copyright Ben Bogart 2002;
+#X obj 10 81 metro 50;
+#X obj 10 29 tgl 15 0 empty empty empty 20 8 0 8 -262144 -1 -1 0 1
+;
+#X floatatom 55 56 5 0 0 0 - - -;
+#X floatatom 103 208 5 0 0 0 - - -;
+#X text 75 102 Reset To Initial Conditions;
+#X text 76 146 Modify Parameters;
+#X floatatom 10 209 5 0 0 0 - - -;
+#X floatatom 196 207 5 0 0 0 - - -;
+#X obj 10 144 rossler;
+#X msg 76 127 param 0.01 0.39 0.4 5.8;
+#X msg 76 84 reset 0.1 0 0;
+#X obj 10 261 send fuente02X;
+#X obj 103 261 send fuente02Y;
+#X obj 196 261 send fuente02Z;
+#X connect 5 0 13 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 1;
+#X connect 8 0 17 0;
+#X connect 11 0 16 0;
+#X connect 12 0 18 0;
+#X connect 13 0 11 0;
+#X connect 13 1 8 0;
+#X connect 13 2 12 0;
+#X connect 14 0 13 0;
+#X connect 15 0 13 0;

@@ -1,0 +1,34 @@
+#N canvas 931 92 506 381 10;
+#X obj -24 -34 cnv 15 500 30 empty empty Fuente_Caótica_01_-_Martin_Attractor
+20 12 0 20 -258113 -66577 0;
+#X obj -24 -3 cnv 15 500 300 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj -1 129 martin;
+#X obj -1 20 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X floatatom 44 62 5 0 0 0 - - -;
+#X obj -1 87 metro 50;
+#X floatatom 74 181 10 0 0 0 Y - -;
+#X floatatom -1 180 10 0 0 0 X - -;
+#X obj -1 223 send fuente01X;
+#X obj 92 223 send fuente01Y;
+#X text 22 17 ON / OFF;
+#X text 103 55 Reset To Initial Conditions;
+#X text 106 91 Modify Parameters;
+#X msg 102 72 reset 0.1 0.1;
+#X msg 101 112 param 3.14159;
+#X text -5 252 This fractal exhibits chaotic tendencies when A (param)
+is in the vicinity of an odd multiple of PI.;
+#X obj -24 298 cnv 15 500 50 empty empty Origen: 20 12 0 12 -4032 -66577
+0;
+#X text -5 320 Chaos PD Externals - Copyright Michael McGonagle 2003
+;
+#X connect 2 0 7 0;
+#X connect 2 1 6 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 1;
+#X connect 5 0 2 0;
+#X connect 6 0 9 0;
+#X connect 7 0 8 0;
+#X connect 13 0 2 0;
+#X connect 14 0 2 0;

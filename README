@@ -1,0 +1,28 @@
+Automatic Album Generator.
+September, 2014.
+Miquel Parera.
+License: CC-BY-SA
+
+Software used (and required):
+
+SO: Debian GNU/Linux 6.0.8 (Squeeze)
+pd-extended: Pd-0.43.4
+Lame: 3.98.4
+Sox: 14.3.1
+Java: 1.6.0_27
+OpenJDK Runtime Environment: IcedTea6 1.12.6
+OpenJDK Server VM (build 20.0-b12) 
+
+How to make a album:
+
+1.Open the NXA006PD.pd on Pd-extended.
+2.Press the album button.
+3.Wait...
+4.The program creates a folder named NXA006PD-yyyy-mm-dd_hh_mm_ss
+with a flac and mp3 subfolders. 
+5.Enjoy the noise and the silence!!!
+
+More info:
+www.musicnumbers.es 
+Feedback:
+info@musicnumbers.es
